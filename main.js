@@ -1,7 +1,7 @@
 let headers = new Headers();
 let username = 'WY9ZNW2DSS-QXQ_DYT3A-G';
 let password = '8-K4f-tpSf2kBWFROH34tA';
-headers.set('Authorization', 'Basic ' + base64.encode(username + ":" + password));
+headers.set('Authorization', 'Basic ' + btoa(username + ":" + password));
 headers.set('User-Agent', 'Chrome');
 
 async function getMarioPrice() {
