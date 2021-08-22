@@ -6,7 +6,7 @@ headers.set('Authorization', 'Basic ' + btoa(username + ":" + password));
 headers.set('User-Agent', 'Chrome');
 
 async function getMarioPrice() {
-    let response = await fetch(url, {mode: 'no-cors', headers: headers});    
+    let response = await fetch(url, {mode: 'opaque', headers: headers});    
     let data = await response.json();
     return data;
 }
