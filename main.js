@@ -7,7 +7,7 @@ headers.append('Authorization', 'Basic ' + window.btoa(username + ":" + password
 headers.set('User-Agent', 'Chrome/77.0.3865.90');
 
 async function getMarioPrice() {
-    let response = await fetch(url, {headers: headers, credentials: 'same-origin'});    
+    let response = await fetch(url, {method: 'GET', headers: headers, credentials: 'same-origin'});    
     let data = await response.json();
     return data;
 }
