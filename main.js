@@ -1,6 +1,4 @@
 let headers = new Headers();
-headers.append("Username", "WY9ZNW2DSS-QXQ_DYT3A-G");
-headers.append("Password", "iF4838FKQYeFCilMBsQZTQ");
 headers.append("Authorization", "Basic " + "WY9ZNW2DSS-QXQ_DYT3A-G" + "iF4838FKQYeFCilMBsQZTQ");
 headers.append('Content-Type', 'application/json');
 
