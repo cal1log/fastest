@@ -4,7 +4,7 @@ let password = 'yRSwLDkBR_-1wUl7saZfpg';
 headers.set('Authorization', 'Basic ' + username + ":" + password);
 
 async function getMarioPrice() {
-    let response = await fetch('https://api.fastspring.com/products/price/mario-kart?country=CO', {headers: headers});    
+    let response = await fetch('https://api.fastspring.com/products/price/mario-kart?country=CO', {mode: 'no-cors', headers: headers});    
     let data = await response.json();
     return data;
 }
