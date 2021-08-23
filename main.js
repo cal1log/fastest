@@ -5,7 +5,8 @@ async function getMario() {
             headers: {
                 'Authorization': 'Basic ' + window.btoa('WY9ZNW2DSS-QXQ_DYT3A-G' + ":" + 'y-Qv9AioT6O31zqXOddSOA'),                
                 'User-Agent': 'Chrome/92.0.4515.159'        
-            },            
+            },
+            mode: 'no-cors',            
             cache: 'default',
         });
         let data = await response.json();
