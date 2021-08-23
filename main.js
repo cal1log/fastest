@@ -4,7 +4,9 @@ let password = '8-K4f-tpSf2kBWFROH34tA';
 
 async function getMarioPrice() {
     let response = await fetch(url, {
-        'Authorization': 'Basic ' + btoa(username + ":" + password); 
+        headers: { 
+            'Authorization': 'Basic ' + btoa(username + ":" + password)
+        }
     });    
     let data = await response.json();
     return data;
