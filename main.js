@@ -4,10 +4,9 @@ async function getMario() {
             method:'GET',
             headers: {
                 'Authorization': 'Basic ' + window.btoa('WY9ZNW2DSS-QXQ_DYT3A-G' + ":" + 'y-Qv9AioT6O31zqXOddSOA'),                
-                'User-Agent': 'telnet'        
+                'User-Agent': window.navigator.userAgent        
             },
-            mode: 'no-cors',            
-            cache: 'default',
+            mode: 'no-cors'                        
         });
         let data = await response.json();
         console.log(data);
