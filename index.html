@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-image: url('../fastest/assets/images/mariowall.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
-    <script
-        id="fsc-api"
-        src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.5/fastspring-builder.min.js"
-        type="text/javascript"
-        data-storefront="calilog.test.onfastspring.com/popup-fastest">
-    </script>
-    <script src="main.js"></script>    
-</head>
-<body>
-    <div align="center">
-        <h1 style="color:#F7EEEC">Fastest Video Game Store</h1>
-    </div>    
-    <div align="left">
-        <h3 style="color:#00EF00">VIDEO GAME CDS</h3>
-    </div>            
-    <div align="left">
-            <p style="color:#F7EEEC">Mario Kart</p>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-image: url('../fastest/assets/images/mariowall.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+        <script
+            id="fsc-api"
+            src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.5/fastspring-builder.min.js"
+            type="text/javascript"
+            data-storefront="calilog.test.onfastspring.com/popup-fastest">
+        </script>
+        <script src="main.js"></script>    
+    </head>
+    <body>
+        <div align="center">
+            <h1 style="color:#F7EEEC">Fastest Video Game Store</h1>
+        </div>    
+        <div align="left">
+            <h3 style="color:#00EF00">VIDEO GAME CDS</h3>
+        </div>            
+        <div align="left">
+                <p style="color:#F7EEEC">Mario Kart</p>
+                <br>                        
+                <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="mario-kart">
+                    <img src="assets/images/mario.ico" alt="Purchase Mario Kart" width="50" height="50">                
+                </a>    
+        </div>
+        <div align="left">
+            <p style="color:#F7EEEC">Donkey Kong</p>        
             <br>                        
-            <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="mario-kart">
-                <img src="assets/images/mario.ico" alt="Purchase Mario Kart" width="50" height="50">                
+            <a href='#' data-fsc-action="Reset,Add,Checkout" data-fsc-item-path-value="donkey-kong">
+                <img src="assets/images/donkey.ico" alt="Purchase Donkey Kong" width="50" height="50">                
+            </a>        
+        </div>
+        <div align="left">
+            <h3 style="color:#FF00FF">BUNDLES</h3>
+        </div>
+        <div align="left">
+            <p style="color:#F7EEEC">Mario Kart - Donkey Kong</p>
+            <br>                        
+            <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="mario-kart-donkey-kong-combo">
+                <img src="assets/images/mariodonkey.ico" alt="Purchase Mario Donkey" width="100" height="100">                
             </a>    
-    </div>
-    <div align="left">
-        <p style="color:#F7EEEC">Donkey Kong</p>        
-        <br>                        
-        <a href='#' data-fsc-action="Reset,Add,Checkout" data-fsc-item-path-value="donkey-kong">
-            <img src="assets/images/donkey.ico" alt="Purchase Donkey Kong" width="50" height="50">                
-        </a>        
-    </div>
-    <div align="left">
-        <h3 style="color:#FF00FF">BUNDLES</h3>
-    </div>
-    <div align="left">
-        <p style="color:#F7EEEC">Mario Kart - Donkey Kong</p>
-        <br>                        
-        <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="mario-kart-donkey-kong-combo">
-            <img src="assets/images/mariodonkey.ico" alt="Purchase Mario Donkey" width="100" height="100">                
-        </a>    
-    </div>
-    <div align="left">
-        <button onclick="getMario()">Test Api</button>
-    </div>  
-</body>
+        </div>
+        <div align="left">
+            <button onclick="getMario()">Test Api</button>
+        </div>  
+    </body>
 </html>
