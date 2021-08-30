@@ -29,11 +29,17 @@
                 alert("This is a function before request callback");
             }
         </script>
+        <script>
+            function darc() {
+                alert("This is a function after request callback");
+            }
+        </script>
         <script
             id="fsc-api"
             src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.5/fastspring-builder.min.js"
             type="text/javascript"
             data-before-requests-callback="dbrc"
+            data-after-requests-callback="darc"
             data-popup-closed="fs"
             data-storefront="calilog.test.onfastspring.com/popup-fastest">
         </script>        
