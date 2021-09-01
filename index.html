@@ -34,6 +34,12 @@
                 alert("This is a function after request callback");                
             }
         </script>
+        <script type="text/javascript">
+            function addQty() {
+                var qty = document.getElementById("qtymariokart").value;
+                fastspring.builder.update('mario-kart', qty)
+            }
+        </script>
         <script
             id="fsc-api"
             src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.5/fastspring-builder.min.js"
@@ -77,9 +83,9 @@
                         <!--This value will be replaced-->
                     </span>
                     <p>Product Quantity:
-                        <input type="text" size="10" data-fsc-item-path-value="mario-kart" data-fsc-item-quantity></input>
+                        <input type="text" size="10" id="qtymariokart"></input>
                     </p>
-                    <button type="button" data-fsc-item-path-value="mario-kart" data-fsc-quantity-value data-fsc-action="Quantity">Apply Mario Kart Quantity</button>
+                    <button onclick="addQtyMario">Apply Mario Kart Quantity</button>
                     
             </div>
             <div align="left">
